@@ -4,7 +4,7 @@ An integrated educational and innovative platform for the DAICO center (SDAIA an
 A demo platform for DAICO management, developed during a coding workshop. This is an initial version currently under development.
 
 ## Contributors
-* **Reem Alshathri (@ReemAlshathri74)**
+* **Reem Alshathri (@ReemAlshathri74) https://github.com/ReemAlshathri74**
 * **Alanoud Alotaibi (@Alanoud-Alotaibi) https://github.com/Alanoud-Alotaibi**
 * **Waad Alsaif (@waadalsaif1-beep)**
 * **Hind Aldalbahi**
