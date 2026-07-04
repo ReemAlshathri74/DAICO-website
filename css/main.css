@@ -228,16 +228,10 @@ html[data-theme="dark"] .header {
   position: relative;
   width: 100%;
   max-width: 320px;
-  aspect-ratio: 200/220;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: var(--space-xl);
-  border-radius: var(--radius-xl);
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  box-shadow: var(--shadow-lg), 0 0 40px rgba(14, 165, 233, 0.04);
-  transition: border-color var(--transition-normal), box-shadow var(--transition-normal);
+  margin-top: -3rem; /* raise slightly higher */
 }
 
 .hero-logo-wrapper::before {
@@ -305,11 +299,13 @@ html[data-theme="dark"] .hero-badge {
 }
 
 .hero-partners {
+  grid-column: span 2; /* span across both columns */
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center; /* center horizontally */
+  justify-content: center;
   gap: var(--space-md);
-  margin-top: var(--space-2xl);
+  margin-top: var(--space-3xl);
   width: 100%;
   animation: fadeIn 0.8s ease-out 0.2s both;
 }
@@ -351,6 +347,8 @@ html[data-theme="dark"] .hero-badge {
   grid-template-columns: repeat(2, 1fr);
   gap: var(--space-lg);
   width: 100%;
+  max-width: 680px; /* compact, centered layout */
+  margin: 0 auto;
 }
 
 .partner-card {
