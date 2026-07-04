@@ -14,7 +14,7 @@ const I18N_TRANSLATIONS = {
   ar: {
     head_title: "مركز دايكو للتميز في البيانات والذكاء الاصطناعي | DAICO",
     head_desc: "مركز دايكو (DAICO) هو مركز التميز للبيانات والذكاء الاصطناعي بجامعة الملك سعود بشراكة سدايا، لسد الفجوة المهنية وإعداد الكفاءات الوطنية وتطوير الحلول الذكية.",
-    brand_title: "دايكو",
+    brand_title: "دايكو <strong>DAICO</strong>",
     brand_badge: "إحدى مبادرات سدايا",
     nav_about: "عن دايكو",
     nav_programs: "البرامج والمسارات",
@@ -576,7 +576,7 @@ const I18N_TRANSLATIONS = {
   en: {
     head_title: "DAICO Center of Excellence for Data and AI | DAICO",
     head_desc: "DAICO Center is the Center of Excellence for Data and AI at King Saud University in partnership with SDAIA, to bridge the professional gap and prepare national talents and develop smart solutions.",
-    brand_title: "DAICO",
+    brand_title: "<strong>DAICO</strong>",
     brand_badge: "A SDAIA Initiative",
     nav_about: "About DAICO",
     nav_programs: "Programs & Tracks",
