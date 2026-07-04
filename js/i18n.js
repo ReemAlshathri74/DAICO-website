@@ -14,7 +14,7 @@ const I18N_TRANSLATIONS = {
   ar: {
     head_title: "مركز دايكو للتميز في البيانات والذكاء الاصطناعي | DAICO",
     head_desc: "مركز دايكو (DAICO) هو مركز التميز للبيانات والذكاء الاصطناعي بجامعة الملك سعود بشراكة سدايا، لسد الفجوة المهنية وإعداد الكفاءات الوطنية وتطوير الحلول الذكية.",
-    brand_title: "دايكو",
+    brand_title: "دايكو <strong>DAICO</strong>",
     brand_badge: "إحدى مبادرات سدايا",
     nav_about: "عن دايكو",
     nav_programs: "البرامج والمسارات",
@@ -177,7 +177,7 @@ const I18N_TRANSLATIONS = {
     trainer_menu_schedule: "جدول المحاضرات والمهام",
     trainer_menu_students: "تقييم أداء الطلاب",
     trainer_menu_profile: "بياناتي المهنية والخبرات",
-    auth_brand: "دايكو DAICO",
+    auth_brand: "دايكو <strong>DAICO</strong>",
     auth_subtitle_desc: "مركز التميز للبيانات والذكاء الاصطناعي",
     auth_login_title: "تسجيل الدخول للمنصة",
     auth_login_desc: "أهلاً بك مجدداً، الرجاء إدخال بياناتك للمتابعة.",
@@ -576,7 +576,7 @@ const I18N_TRANSLATIONS = {
   en: {
     head_title: "DAICO Center of Excellence for Data and AI | DAICO",
     head_desc: "DAICO Center is the Center of Excellence for Data and AI at King Saud University in partnership with SDAIA, to bridge the professional gap and prepare national talents and develop smart solutions.",
-    brand_title: "DAICO",
+    brand_title: "<strong>DAICO</strong>",
     brand_badge: "A SDAIA Initiative",
     nav_about: "About DAICO",
     nav_programs: "Programs & Tracks",
@@ -739,7 +739,7 @@ const I18N_TRANSLATIONS = {
     trainer_menu_schedule: "Schedule & Tasks",
     trainer_menu_students: "Student Performance Evaluation",
     trainer_menu_profile: "Professional Data & Experience",
-    auth_brand: "DAICO",
+    auth_brand: "<strong>DAICO</strong>",
     auth_subtitle_desc: "Data & AI Center of Excellence",
     auth_login_title: "Platform Login",
     auth_login_desc: "Welcome back, please enter your details to continue.",
@@ -1165,8 +1165,12 @@ function translatePage(lang) {
           }
         }
       } else {
-        // Simple text replacement
-        el.textContent = dict[key];
+        // Simple text replacement (uses innerHTML if HTML tags are present)
+        if (dict[key] && dict[key].includes('<')) {
+          el.innerHTML = dict[key];
+        } else {
+          el.textContent = dict[key];
+        }
       }
     }
   });
